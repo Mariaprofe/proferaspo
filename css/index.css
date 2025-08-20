@@ -46,7 +46,7 @@
 }
 
 #redessociales{
-    color:blue;
+    color:rgba(0, 0, 255, 0.029);
     margin-left:20%;
     margin-right:40%;
     display: flex;
@@ -371,7 +371,7 @@ footer small{
 
   #contenedor{
       width: 100%;
-      min-width: 460px;
+      min-width: 320px;
   }
 
   #contenedor > *{
@@ -402,6 +402,256 @@ margin-left:0;
  padding: 3px 1px;
 
 }
+}
+
+/* Media Queries para diseño responsive */
+
+/* ===== MÓVILES (hasta 480px) ===== */
+@media (max-width: 480px) {
+    #contenedor {
+        min-width: 320px;
+        padding: 0 10px;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    header ul {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #config {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 10px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #productos {
+        flex-direction: column;
+        margin-top: 20px;
+        transform: none;
+        animation: none;
+    }
+    
+    #productos article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .producto {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .producto img {
+        width: 80px;
+    }
+    
+    #redessociales {
+        margin: 20px 0;
+        justify-content: center;
+    }
+    
+    #redessociales ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #redessociales ul li a {
+        padding: 10px;
+    }
+    
+    aside {
+        position: relative;
+        width: 100%;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+    
+    footer {
+        position: relative;
+        top: auto;
+        margin-top: 20px;
+    }
+}
+
+/* ===== TABLETS (481px - 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+    #contenedor {
+        min-width: 480px;
+        padding: 0 20px;
+    }
+    
+    header {
+        padding: 0 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+    
+    #productos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        transform: none;
+        animation: none;
+    }
+    
+    #productos article {
+        width: 45%;
+        min-width: 200px;
+    }
+    
+    .producto {
+        width: 100%;
+        height: 250px;
+    }
+    
+    #redessociales {
+        margin: 30px 10%;
+    }
+    
+    #redessociales ul {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    aside {
+        width: 25%;
+        left: 75%;
+    }
+}
+
+/* ===== TABLETS GRANDES (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #contenedor {
+        min-width: 768px;
+        padding: 0 30px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    #productos {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 25px;
+    }
+    
+    #productos article {
+        width: 30%;
+        min-width: 250px;
+    }
+    
+    .producto {
+        width: 100%;
+        height: 280px;
+    }
+    
+    aside {
+        width: 22%;
+        left: 78%;
+    }
+}
+
+/* ===== COMPUTADORAS (1025px y más) ===== */
+@media (min-width: 1025px) {
+    #contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    #productos {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    #productos article {
+        width: 23%;
+        min-width: 280px;
+    }
+    
+    .producto {
+        width: 100%;
+        height: 320px;
+    }
+    
+    aside {
+        width: 20%;
+        left: 80%;
+    }
+}
+
+/* ===== PANTALLAS GRANDES (1400px y más) ===== */
+@media (min-width: 1400px) {
+    #contenedor {
+        max-width: 1400px;
+    }
+    
+    #productos article {
+        width: 22%;
+    }
+    
+    .producto {
+        height: 350px;
+    }
 }
 
 
