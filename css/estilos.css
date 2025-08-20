@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.active{
+    border-bottom: 5px solid white;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+nav ul li a .activo:hover{
+    border-bottom: 5px solid orange;
+}
+
+
+
+/* Header y logo */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+@media (min-width:700px)
+    nav ul{
+        font-size: 1rem;
+        flex-direction:column;
+        height:120px;
+        justify-content:space-evenly;
+    }
+}
+@media  (max-width:700px){
+
+             nav ul{
+             font-size: 2rem;
+
+                       }
+
+
+
+
+}
+@media  (min-width:800px{
+   nav ul{
+ font-size: 1rem;
+width: 10%;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-top: 120%;
+        margin-left: 270%;
+        right: 10%;
+        display: flex;
+
+           }
+}
+
+
+@media  (max-width: 800px){
+    nav ul {
+
+        width: 10%;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-top: 120%;
+        margin-left: 270%;
+        right: 10%;
+        display: flex;
+
+
+    }
+
+
+}
+@media (max-width:800px){
+
+    #productos{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+        }
+
+}
