@@ -12,16 +12,14 @@ display: flex;
         text-align: center;
         height: 70px;
 
-
         /*
-
             Fijamos la cabecera en el tope de la página  list-style: none;
              position: fixed;
         */
 
         width:100%;
         top:0%;
-        left:170%;
+        left:0%;
         justify-content: center;
         align-items: center;
 }

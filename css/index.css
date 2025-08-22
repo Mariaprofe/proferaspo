@@ -3,6 +3,7 @@
    font-size: 1rem;
    */
  body{
+    font-size: 1rem;
      margin: 0;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
@@ -24,11 +25,13 @@
  }
 
  header{
-     display:flex;
+     display: flex;
      justify-content: space-between;
-     background-color: cornflowerblue;
-     padding: 10px 14px;
-  box-sizing: border-box;
+     background-color: #4fbfe5;
+     padding: 0px 10px;
+     box-sizing: border-box;
+     align-content: center;
+     flex-wrap: wrap;
  }
 
  header ul{
@@ -49,19 +52,16 @@
 }
 
 #redessociales{
-    color:rgba(0, 0, 255, 0.029);
-    margin-left:20%;
-    margin-right:40%;
+    color: #e5e5f8;
+    margin-left:2%;
+    margin-right:90%;
     display: flex;
-    justify-content:  space-evenln;
-    margin-top: 50px;
-
-
-
+    justify-content:space-between;
+    margin-top: 100px;
 }
 #redessociales ul {
 
-    padding: 10% 5% ;
+    padding: 1% 0% ;
 
 
 
@@ -72,18 +72,16 @@
     display: flex;
     list-style: none;
     width: 100%;
-
-
-
 }
+
 #redessociales ul li a i {
-    font-size: 11rem;
-    text-shadow: 0 0 2 rgb(213, 196, 196);
-    font-size: 1.70rem;
+    font-size: 1rem;
+    text-shadow: 0 0 2 rgb(70, 111, 68);
+    font-size: 2rem;
 
 }
 #redessociales ul li a  {
-    padding:6% 50px;
+    padding:89% 48px;
 
 }
 
@@ -95,7 +93,7 @@ h1{
     align-items: center;
     /*
         Sombra al texto
-        Parámetros:
+        ParÃ¡metros:
         X Y Blur color
         Puedo separar niveles de sombra con ,
     */
@@ -104,7 +102,7 @@ h1{
     margin-top: 0;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    backgroud: linear-gradient(35deg, #feffff 0%,#ddf1f9 41%,#d6dfe2 100%);
+    background: linear-gradient(35deg, #feffff 0%,#ddf1f9 41%,#d6dfe2 100%);
 }
 
 /*---------------------------*/
@@ -203,7 +201,7 @@ align-items: center;
     height: 600px;
 */
  /*
-        Establecemos el estado de las propiedades con el que queda una vez terminada la animación
+        Establecemos el estado de las propiedades con el que queda una vez terminada la animaciÃ³n
     */
 
     /*
@@ -212,22 +210,22 @@ align-items: center;
 
  /*--------------------------------*/
  /*  height:510px;
-        Alineación horizontal
+        AlineaciÃ³n horizontal
     */
     /*
-        Alineación vertical
+        AlineaciÃ³n vertical
     */
 
     /*
-        Agregamos una transformación de rotación (rotate)
-        Agregamos una transformación de translación (X,Y)
+        Agregamos una transformaciÃ³n de rotaciÃ³n (rotate)
+        Agregamos una transformaciÃ³n de translaciÃ³n (X,Y)
         Agregamos skew para inclinar la caja
     */
 
-    transform: rotate(-2deg) translate(50px,50px) skew(10dseg);
+    transform: rotate(-2deg) translate(50px,50px) skew(10deg);
     transform: scale(1);
     /*
-        Punto de origen de la transformación.
+        Punto de origen de la transformaciÃ³n.
     */
     transform-origin:top ;
     animation: animar 1s 1;
@@ -292,13 +290,13 @@ top :500%;
   height: 20%;
   height: 300px;
     border:1px solid lightgrey;
-  border: radius 30px;
+  border-radius: 30px;
  padding: 10px ;
 
 text-align:center;
 /*
         Sombra a la caja
-        Parámetros:
+        ParÃ¡metros:
         X Y Blur color
         Puedo separar niveles de sombra con ,
         inset es sombra interior (opcional)
@@ -341,7 +339,7 @@ aside {
     top: 200px;
     left: 0%;
     right: 0px;
-    max-lines: 4;
+    max-height: 4em;
 
 }
 
@@ -360,7 +358,7 @@ footer small{
 
 }
 /*
-    Creamos un div para contener a los artículos y ponerlos de a 2 porque tienen ancho de 50%
+    Creamos un div para contener a los artÃ­culos y ponerlos de a 2 porque tienen ancho de 50%
 */
 
 
@@ -374,12 +372,12 @@ footer small{
     */
 
     from{width: 70px;height: 70px;opacity:1;}
-    to {width: 970x;height: 600;opacity:1;}
+    to {width: 970px;height: 600px;opacity:1;}
 
 }
 
 
-/* Ajustes para móviles */
+/* Ajustes para mÃ³viles */
 /*
 @media (max-width: 640px) {
   body{
@@ -426,9 +424,9 @@ margin-left:0;
 }
 }
 */
-/* Media Queries para diseño responsive */
+/* Media Queries para diseÃ±o responsive */
 
-/* ===== MÓVILES (hasta 480px) ===== */
+/* ===== MÃ"VILES (hasta 480px) ===== */
 @media (max-width: 480px) {
     #contenedor {
         min-width: 320px;
@@ -436,19 +434,15 @@ margin-left:0;
     }
 
     header {
-        flex-direction:column;
-        padding: 0px;
-        
-
-
-        
+        flex-direction: column;
+        padding: 0%;
     }
 
     header ul {
         flex-direction:row;
-        margin-top:-80px;
+        margin-top:-70px;
         gap: 10px;
-        padding: 10px 10px;
+        padding: 2px 0px;
     }
 
     h1 {
@@ -475,7 +469,7 @@ margin-left:0;
     nav ul li a {
         font-size: 1rem;
         padding: 3px 2px;
-        width: 49%;
+        width: 52%;
         text-align: center;
         border-radius: 10px;
         gap: 10px;
@@ -602,15 +596,16 @@ footer {
 
 
 }
-/*
+
+
 footer{
     background-color: navy;
     width: 100%;
     text-align: center;
     padding: 13px  0px;
 }
-*/
-/*
+
+
 footer small{
     color: white;
     box-shadow: 2px 2px 10px rgb(109, 57, 57);
@@ -657,7 +652,7 @@ footer small{
     }
 }
 
-/* ===== COMPUTADORAS (1025px y más) ===== */
+/* ===== COMPUTADORAS (1025px y mÃ¡s) ===== */
 @media (min-width: 1025px) {
     #contenedor {
         max-width: 1200px;
@@ -696,7 +691,7 @@ footer small{
     }
 }
 
-/* ===== PANTALLAS GRANDES (1400px y más) ===== */
+/* ===== PANTALLAS GRANDES (1400px y mÃ¡s) ===== */
 @media (min-width: 1400px) {
     #contenedor {
         max-width: 1400px;
@@ -710,10 +705,3 @@ footer small{
         height: 350px;
     }
 }
-
-
-
-
-
-
-
