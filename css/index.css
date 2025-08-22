@@ -14,7 +14,7 @@
 
  #contenedor{
      width: 100%;
-     min-width: 340px;
+     min-width: 640px;
  }
 
  #contenedor > *{
@@ -25,20 +25,24 @@
  }
 
  header{
-     display: flex;
-     justify-content: space-between;
-     background-color: #4fbfe5;
-     padding: 0px 10px;
-     box-sizing: border-box;
-     align-content: center;
-     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    padding: 0;
  }
 
  header ul{
-     display: flex;
-     justify-content: space-evenly;
+ direction:flex;
+position: fixed;
+     justify-content:space-between;
      margin-top: 30px;
-     min-width: 10px;
+    
  }
 
 
@@ -52,12 +56,13 @@
 }
 
 #redessociales{
-    color: #e5e5f8;
-    margin-left:2%;
-    margin-right:90%;
+    color: white;
     display: flex;
-    justify-content:space-between;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 #redessociales ul {
 
@@ -75,43 +80,52 @@
 }
 
 #redessociales ul li a i {
-    font-size: 1rem;
-    text-shadow: 0 0 2 rgb(70, 111, 68);
-    font-size: 2rem;
-
-}
-#redessociales ul li a  {
-    padding:89% 48px;
-
+    text-shadow: 0 0 2px rgba(0,0,0,0.3);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
 
+#redessociales ul li a {
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
 
-h1{
+#redessociales ul li a:hover i {
+    transform: scale(1.2);
+    color: #ffd700;
+}
 
-   position: fixed;
-    font-size: 2rem;
-    align-items: center;
-    /*
-        Sombra al texto
-        ParÃ¡metros:
-        X Y Blur color
-        Puedo separar niveles de sombra con ,
-    */
-    text-shadow: 0 0 5px rgb(213, 196, 196);
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
     color: white;
-    margin-top: 0;
-    width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(35deg, #feffff 0%,#ddf1f9 41%,#d6dfe2 100%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 15px 20px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /*---------------------------*/
 
-    nav ul {
-        flex-direction: row;
-        margin-top: 20px;
-        gap: 10px;
-    }
+    nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    flex-direction: row;
+    margin: 0;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
     nav ul li a {
         font-size: 1.4rem;
@@ -153,16 +167,20 @@ nav ul{
  }
 */
 nav ul li a{
-background-color: rgb(240, 230, 216);
-    color: rgb(222, 123, 47);
-    padding: 0px 1px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 16px;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    box-shadow: 2px 2px 1px rgb(46, 52, 46), -2px -2px 18px rgba(62, 59, 59, 0.5) inset;
+    font-size: 1rem;
+    border-radius: 20px;
     white-space: nowrap;
     display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: fit-content;
+    text-align: center;
 }
 
 .active{
@@ -170,7 +188,10 @@ background-color: rgb(240, 230, 216);
 }
 
 nav ul li a:hover{
-    color: orange;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 nav ul li a .activo:hover{
@@ -180,9 +201,14 @@ nav ul li a .activo:hover{
 
 
 
+main {
+    margin-top: 200px;
+    padding: 20px;
+}
+
 #productos{
   display: flex;
-    margin-top:10% 10%;
+    margin-top: 20px;
 align-items: center;
   justify-content: space-evenly;
 
@@ -434,22 +460,21 @@ margin-left:0;
     }
 
     header {
-        flex-direction: column;
-        padding: 0%;
+        position: fixed;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 
     header ul {
-        flex-direction:row;
-        margin-top:-70px;
+        flex-direction: row;
+        margin-top: 10px;
         gap: 10px;
         padding: 2px 0px;
     }
 
     h1 {
         font-size: 1rem;
-        position: relative;
         text-align: center;
-        padding: 0px 0px;
+        padding: 10px 20px;
     }
 
     #config {
@@ -459,22 +484,32 @@ margin-left:0;
         margin: 10px 0;
     }
 
+    nav {
+        padding: 5px 0;
+    }
+    
     nav ul {
         flex-direction: column;
-        margin-top: 3px;
-        gap: 10px;
-       
+        margin: 0;
+        gap: 5px;
+        padding: 0 10px;
     }
    
     nav ul li a {
-        font-size: 1rem;
-        padding: 3px 2px;
-        width: 52%;
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        width: auto;
+        min-width: 80px;
         text-align: center;
-        border-radius: 10px;
-        gap: 10px;
+        border-radius: 15px;
+        margin: 2px 0;
     }
 
+    main {
+        margin-top: 220px;
+        padding: 10px;
+    }
+    
     #productos {
         flex-direction: column;
         margin-top: 20px;
@@ -498,10 +533,9 @@ margin-left:0;
     }
 
     #redessociales {
-       
-        margin: 40px -9px;
+        margin: 0;
         justify-content: center;
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
 
     #redessociales ul {
@@ -551,8 +585,10 @@ margin-left:0;
     }
 
     nav ul li a {
-        font-size: 1.1rem;
-        padding: 8px 12px;
+        font-size: 1rem;
+        padding: 8px 16px;
+        min-width: fit-content;
+        text-align: center;
     }
 
     #productos {
@@ -628,6 +664,14 @@ footer small{
     nav ul {
         justify-content: center;
         gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        min-width: fit-content;
+        text-align: center;
     }
 
     #productos {
@@ -667,6 +711,14 @@ footer small{
     nav ul {
         justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+        min-width: fit-content;
+        text-align: center;
     }
 
     #productos {
