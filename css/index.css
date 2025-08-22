@@ -983,6 +983,7 @@ footer small{
     }
 
     nav ul li a:hover {
+     position: fixed;
         background: rgba(52, 152, 219, 1);
         color: white;
         transform: translateY(-2px);
