@@ -1,11 +1,15 @@
 body{
 font-family: Verdana, Geneva, sans-serif,monospace;
- font-size: 1rem;
-line-height: 1em;
+ font-size: 1.2rem;
+line-height: 1.6em;
 color:#171817;
-margin: 0 10%;
+margin: 0 ;
 }
-
+h1{
+    
+    font-size: 2rem;
+    line-height: 1.3em;
+}
 p{
 
     margin-bottom: 1.6em;
@@ -17,23 +21,19 @@ p{
     margin:0 auto;
 
 }
-h1{
-    
-    font-size: 1rem;
-    line-height: 1em;
-}
+
 .header{
     position: fixed;
     background: #bac3cb;
     color:white
-    padding:2px 0em;
-  
+    padding:2rem 0;
+    top:0;
 }
 .header a{
    
-    color:write;
+    color:white;
     text-decoration: none;
-    padding:0;
+  
 }
 .logo-nav-container{
     display:flex;
@@ -45,7 +45,7 @@ h1{
 
     position: fixed;
     right: 20px;
-    top: 6px;
+    top: 0px;
     font-size: 1rem;
 }
 
