@@ -26,8 +26,11 @@ p{
     position: fixed;
     background: #bac3cb;
     color:white
-    padding:2rem 0;
+    padding: 2rem 0;
     top:0;
+    left:0;
+    right:0;
+
 }
 .header a{
    
@@ -145,7 +148,7 @@ border: 1px solid rgba(21, 3, 105, 0.827);
 
 
 .main{
-    padding-top:15rem;
+    padding-top:20rem;
  }
  
 
@@ -341,4 +344,22 @@ aside {
       Creamos un div para contener a los artÃ­culos y ponerlos de a 2 porque tienen ancho de 50%
   */
   
-  
+  @media screen and (max-resolution: 767px) {
+
+   header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+}
+  }
