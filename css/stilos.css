@@ -14,23 +14,28 @@ p{
 
     margin-bottom: 1.6em;
 }
+h2{
 
+    font-size:2rem;
+    line-height: 1.6em;
+}
 .container{
     width: 85%;
     max-width:850px;
-    margin:0 auto;
+   margin:0 auto;
 
 }
 
 .header{
-    position: fixed;
+
     background: #bac3cb;
     color:white
     padding: 2rem 0;
-    top:0;
-    left:0;
-    right:0;
 
+     position: fixed;
+     top:0;
+            left:0;
+            right:0;
 }
 .header a{
    
@@ -46,11 +51,6 @@ p{
 }
 
 
-.main{
-    padding-top:20rem;
- }
- 
-
 #config {
 
 
@@ -59,34 +59,56 @@ p{
     top: 0px;
     font-size: 1rem;
 }
+ video{
+    display:none;
 
-    
-
-   
 
 .navigation ul{
 margin:0;
 padding:0 ;
 list-style:none;
 color:rgb(255, 254, 247);
+  align-items: center;
+
+}
+  }
+.menu-icon{
+  left:0;
+  top:140;
+
+  display:block;
+  cursor:pointer;
+    padding:0.5rem 2rem;
 
 
 }
 
 
+
+.navigation {
+display:none;
+
+}
+.navigation ul.show{
+display:block;
+}
+
+
 .navigation ul li{
+    display:inline-block;
+
     font-size: 1rem;
     border-radius:1.5px;
     white-space: wrap;
-    display:inline-block;
+
     color:#a8e118;
 
 
 }
 .navigation ul li a{
     display :inline-block;
- padding:0.5rem 2rem;
- transition: all 00.4s linear;
+ padding:0.5rem 1rem;
+ transition: all 0.4s linear;
 border-radius:1.5px;
 font-size: 1rem;
 border-radius: 10px;
@@ -103,6 +125,12 @@ border: 1px solid rgba(21, 3, 105, 0.827);
     
 }
 
+
+
+
+.main{
+    padding-top:20rem;
+ }
 
 #redessociales{
     direction: column;
@@ -220,10 +248,12 @@ border: 1px solid rgba(21, 3, 105, 0.827);
   }
   
   .irabajo{
-  top :500%;
+  top :500px;
   }
   
-  
+  .irarriba{
+    top:10px;
+  }
   #productos article{
       width: 70%;
       height: 100px;
@@ -307,6 +337,7 @@ border: 1px solid rgba(21, 3, 105, 0.827);
       width: 100%;
    align-items: center;
   }
+
   aside {
      display: flex;
       width: 20%;
@@ -314,9 +345,10 @@ border: 1px solid rgba(21, 3, 105, 0.827);
       top: 200px;
       right: 0px;
       left: auto;
-      max-height: 4em;
+      max-height:3em;
       z-index: 1;
   }
+  
 aside {
 
    display: flex;
@@ -328,7 +360,21 @@ aside {
     max-lines: 4;
 
 }
-  
+
+
+@keyframes animar {
+    /*
+        Cambiamos:
+        ancho
+        alto
+        opacidad (de totalmente opaco a transparente) con opacity
+        y color de fondo
+    */
+
+    from{width: 70px;height: 70px;opacity:1;}
+    to {width: 970px;height: 600px;opacity:1;}
+
+}
   footer{
       background-color: navy;
       width: 100%;
@@ -346,41 +392,32 @@ aside {
       Creamos un div para contener a los artÃ­culos y ponerlos de a 2 porque tienen ancho de 50%
   */
   
-  @media only screen and (max-width:767px) {
+  @media only screen and (max-width:760){
+.menu-icon{
+ display:none;
+
+}
+
+.navigation ul.show{
+display:block;
 
 
+}
+
+.navigation{
+display:block;
+
+}
     .navigation {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1em;
     }
- .navigation ul li{
-            display:block;
-        }
+
 .navigation ul li a{
             display :block;
          padding:0.5rem 0;
-              
-            
-        
-         }
-h2{
-    margin-top:39%;
+         transition: all 0.4s linear;
+        border-radius: 5px;  
 }
-    .main{
-        padding-top:55rem;
-    }
-        
-    #producto img {
-        padding-top:5rem;
-    }      
-         
-       
-  #productos article img{
-    padding-top:190rem;
-  }  
-  #productos article{
-    padding-top:190rem;
-  }       
-    
-}
-  
+
+  }
