@@ -78,7 +78,7 @@ color:rgb(255, 254, 247);
 }
 
 .menu-icon{
-  display:inline-block;
+  display:none;
   }
 
 
@@ -381,32 +381,38 @@ aside {
       Creamos un div para contener a los artÃ­culos y ponerlos de a 2 porque tienen ancho de 50%
   */
 
- @media only screen and (max-width:636){
+ @media only screen and (max-width:767px){
 
- .menu-icon{
- display:block;
+
+.menu-icon{
+  display:block;
   cursor:pointer;
+padding:0.5rem 1rem
+  }
 
-}
 
-.navigation {
+.navigation ul{
         width: 100%;
         margin-top: 1rem;
-    }
+}
+
 .navigation ul{
-display:none;
-}
+      display:none;
+      }
 
-.navigation ul.show{
-display:block;
+  .navigation ul.show{
+  display:block;
+  }
 
 
-}
 .navigation ul li a{
             display :block;
          padding:0.5rem 0;
          transition: all 0.4s linear;
         border-radius: 5px;  
 }
+.navigation ul li a:hover{
+   background:    #ffd700;
 
+}
   }
