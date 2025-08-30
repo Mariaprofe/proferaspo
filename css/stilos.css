@@ -5,6 +5,11 @@ line-height: 1.6em;
 color:#171817;
 margin: 0 ;
 }
+
+
+.menu-icon{
+  display:none;
+  }
 h1{
     
     font-size: 2rem;
@@ -61,7 +66,7 @@ h2{
 }
  video{
     display:none;
-
+}
 
 .navigation ul{
 margin:0;
@@ -71,27 +76,11 @@ color:rgb(255, 254, 247);
   align-items: center;
 
 }
-  }
+
 .menu-icon{
-  left:0;
-  top:140;
+  display:inline-block;
+  }
 
-  display:block;
-  cursor:pointer;
-    padding:0.5rem 2rem;
-
-
-}
-
-
-
-.navigation {
-display:none;
-
-}
-.navigation ul.show{
-display:block;
-}
 
 
 .navigation ul li{
@@ -391,11 +380,21 @@ aside {
   /*
       Creamos un div para contener a los artÃ­culos y ponerlos de a 2 porque tienen ancho de 50%
   */
-  
-  @media only screen and (max-width:760){
-.menu-icon{
- display:none;
 
+ @media only screen and (max-width:636){
+
+ .menu-icon{
+ display:block;
+  cursor:pointer;
+
+}
+
+.navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+.navigation ul{
+display:none;
 }
 
 .navigation ul.show{
@@ -403,16 +402,6 @@ display:block;
 
 
 }
-
-.navigation{
-display:block;
-
-}
-    .navigation {
-        width: 100%;
-        margin-top: 1em;
-    }
-
 .navigation ul li a{
             display :block;
          padding:0.5rem 0;
