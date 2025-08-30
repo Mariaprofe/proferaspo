@@ -73,14 +73,13 @@ margin:0;
 padding:0 ;
 list-style:none;
 color:rgb(255, 254, 247);
-  align-items: center;
+align-items: center;
 
 }
 
 .menu-icon{
   display:none;
   }
-
 
 
 .navigation ul li{
@@ -386,13 +385,13 @@ aside {
 
 .menu-icon{
   display:block;
-  cursor:pointer;
-padding:0.5rem 1rem
+   cursor:pointer;
+    padding:0.5rem 1rem
   }
 
 
 .navigation ul{
-        width: 100%;
+        width:100%;
         margin-top: 1rem;
 }
 
@@ -400,7 +399,7 @@ padding:0.5rem 1rem
       display:none;
       }
 
-  .navigation ul.show{
+.navigation ul.show{
   display:block;
   }
 
