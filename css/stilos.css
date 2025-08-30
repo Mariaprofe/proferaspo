@@ -414,4 +414,18 @@ aside {
    background:    #ffd700;
 
 }
+h1{
+
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+p{
+
+    margin-bottom: 1.3em;
+}
+h2{
+
+    font-size:1.6rem;
+    line-height: 1.7em;
+}
   }
