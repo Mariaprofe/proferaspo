@@ -6,23 +6,24 @@ color:#171817;
 margin: 0 ;
 }
 
-.menu-icon{
-  display:none;
-  }
+
 h1{
     
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.3em;
 }
+
+
 p{
 
     margin-bottom: 1.6em;
 }
 h2{
 
-    font-size:2rem;
-    line-height: 1.6em;
+    font-size:1.55rem;
+    line-height: 1.9em;
 }
+
 .container{
     width: 85%;
     max-width:850px;
@@ -55,14 +56,22 @@ h2{
 }
 
 
-#config {
 
 
-    position: fixed;
-        right: 20px;
-        top: 0px;
-        font-size: 1rem;
+
+.menu-icon{
+display:none;
 }
+
+.config{
+    position: fixed;
+        right:0;
+      text-color:azure;
+        top:0%;
+        font-size:1rem;
+}
+
+
  video{
     display:none;
 }
@@ -114,7 +123,7 @@ border: 1px solid rgba(21, 3, 105, 0.827);
 
 
 .main{
-    padding-top:20rem;
+    padding-top:15rem;
  }
 
 #redessociales{
@@ -238,6 +247,14 @@ border: 1px solid rgba(21, 3, 105, 0.827);
   
   .irarriba{
     top:0px;
+  }
+  h3{
+   font-size:1rem;
+      line-height: 1.3em;
+  }
+  #productos article{
+  font-size:0.3rem  0;;
+        line-height: 1.2em;
   }
   #productos article{
       width: 70%;
@@ -378,12 +395,10 @@ aside {
   */
 
  @media only screen and (max-width:767px){
-
-
 .menu-icon{
   display:block;
   cursor:pointer;
-  padding:0.5rem 1rem
+  padding:0rem 20rem
   }
 
 
@@ -419,10 +434,11 @@ h1{
 p{
 
     margin-bottom: 1.3em;
+    font-size:1rem;
 }
 h2{
 
-    font-size:1.6rem;
-    line-height: 1.7em;
+    font-size:1.3rem;
+    line-height: 1.6em;
 }
   }
