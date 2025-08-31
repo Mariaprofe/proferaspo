@@ -6,7 +6,6 @@ color:#171817;
 margin: 0 ;
 }
 
-
 .menu-icon{
   display:none;
   }
@@ -60,9 +59,9 @@ h2{
 
 
     position: fixed;
-    right: 20px;
-    top: 0px;
-    font-size: 1rem;
+        right: 20px;
+        top: 0px;
+        font-size: 1rem;
 }
  video{
     display:none;
@@ -77,9 +76,7 @@ align-items: center;
 
 }
 
-.menu-icon{
-  display:none;
-  }
+
 
 
 .navigation ul li{
@@ -236,11 +233,11 @@ border: 1px solid rgba(21, 3, 105, 0.827);
   }
   
   .irabajo{
-  top :500px;
+  top :1000px;
   }
   
   .irarriba{
-    top:10px;
+    top:0px;
   }
   #productos article{
       width: 70%;
@@ -385,8 +382,8 @@ aside {
 
 .menu-icon{
   display:block;
-   cursor:pointer;
-    padding:0.5rem 1rem
+  cursor:pointer;
+  padding:0.5rem 1rem
   }
 
 
