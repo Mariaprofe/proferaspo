@@ -6,6 +6,9 @@ color:#171817;
 margin: 0 ;
 }
 
+.menu-icon{
+display:none;
+}
 
 h1{
     
@@ -59,9 +62,6 @@ h2{
 
 
 
-.menu-icon{
-display:none;
-}
 
 .config{
     position: fixed;
