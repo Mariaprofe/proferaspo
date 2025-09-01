@@ -14,8 +14,17 @@ h1{
 
 
 p{
+font-family: 'Courier New', Courier, monospace;
+ font-size: 18px;
+ text-align: center;
+ font-weight:bold;
+ /* margen entrre lineas y alto de la letra*/
+ line-height: 140%;
+ margin: 10% 0%;
+  letter-spacing: 1px;
+ /*espacio entre letras.
 
-    margin-bottom: 1.6em;
+    margin-bottom: 1.6em;*/
 }
 h2{
 
@@ -23,6 +32,12 @@ h2{
     line-height: 1.9em;
 }
 
+h3,h4{
+    color: black;
+    font-size: 18px;
+    text-align:left;
+    font-weight:bold;
+}
 .container{
     width: 85%;
     max-width:850px;
@@ -91,22 +106,22 @@ align-items: center;
     display:inline-block;
 
     font-size: 1rem;
-    border-radius:1.5px;
+    border-radius:1.8px;
     white-space: wrap;
 
-    color:#a8e118;
+    color:black;
 
 
 }
 .navigation ul li a{
-    display :inline-block;
- padding:0.5rem 1rem;
+display :inline-block;
+ padding:0.5rem 1.3rem;
  transition: all 0.4s linear;
-border-radius:1.5px;
-font-size: 1rem;
-border-radius: 10px;
+border-radius:1.8px;
+font-size: 1.3rem;
+border-radius:10px;
 white-space: wrap;
-border: 1px solid rgba(21, 3, 105, 0.827);
+border:3px solid rgba(21, 3, 105, 0.827);
      min-width: fit-content;
      text-align: center;
      position: relative;
@@ -354,12 +369,14 @@ aside {
     max-lines: 4;
 
 }
-
+.abajo{
+top :50%;
+}
 .irabajo{
-top :500px;
+top :10%;
 }
 .irarriba{
-    top:0px;
+    top:150px;
   }
 
 @keyframes animar {

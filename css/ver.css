@@ -4,7 +4,7 @@ body{
     font-size: 2rem;
 
 }
-h1,h2 {
+h1 {
 
 display: flex;
         background-color: hwb(0 93% 4% / 0.036);
@@ -19,11 +19,15 @@ display: flex;
 
         width:100%;
         top:0%;
-        left:0%;
+        left:60%;
         justify-content: center;
         align-items: center;
 }
-
+h2{
+  text-align: center;
+    width:50%;
+     left:80%;
+}
 #youtube iframe{
    display:flex;
 
@@ -34,8 +38,9 @@ margin-left: 35%;
    margin-right: 45%;
  }
  main{
-    width: 60%;
-    margin: 0 auto;
+     width: 85%;
+       max-width:850px;
+      margin:0 auto;
  }
  .irahome{
    display: flex;
