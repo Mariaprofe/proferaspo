@@ -5,7 +5,32 @@ line-height: 1.6em;
 color:#171817;
 margin: 0 ;
 }
+#conteiner >div{
+    /*   para que quede 2 y 2*/
+    width: 180px;
+    height: 180px;
 
+    margin: 10px;
+    /* uno  al lado del otro float*/
+    float: right;
+
+}
+  #caja1{background-color: blue;}
+  #caja2{background-color: rgb(207, 19, 59);}
+  #caja3{background-color: rgb(89, 203, 18);}
+  #caja4{background-color: rgba(255, 106, 0, 0.925);}
+div #caja1{
+    /*ancho*/
+
+    width: 50%;
+
+      /*alto*/
+
+     height: 200px;
+     display: flex;
+     background-color: rgb(60, 156, 161);
+     justify-content: center;
+}
 h1{
     
     font-size: 1rem;

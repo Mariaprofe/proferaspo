@@ -2,6 +2,33 @@
     margin: 0;
 
 }
+/*=============================================================
+
+
+.conteiner{
+     /*de esta manera se ubica las cajas al lado de otra con el flex*/
+       display: flex;
+      /*justify-content: center;*/
+       /* como se distribuye las cajas internas*/
+       justify-content: space-evenly ;
+
+}
+/*
+
+.conteiner >div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 5px;
+
+}
+/*
+.caja1{background-color: rgb(25, 25, 200);}
+.caja2{background-color: rgb(19, 25, 207);}
+.caja03{background-color: rgb(19, 25, 207);}
+.caja04{background-color: rgba(21, 0, 255, 0.925);}
+*/
+/*---------------------------------------------------------------*/
 
 .contenedor{
 display:flex;
@@ -49,15 +76,16 @@ display: flex;
 
         width:50%;
         top:0%;
-        left:160%;
+        left:60%;
         justify-content:right;
         align-items: right;
 }
  h2{
   text-align:right;
     width:50%;
-     left:80%;
-            align-items: center;
+
+     right:0;
+            align-items: right;
 }
 /*
 #youtube iframe{

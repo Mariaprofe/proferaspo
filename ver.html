@@ -8,29 +8,79 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
+<style>
 
+
+#conteiner{
+     /*de esta manera se ubica las cajas al lado de otra con el flex*/
+       display: flex;
+      /*justify-content: center;*/
+       /* como se distribuye las cajas internas*/
+       justify-content: space-evenly ;
+
+
+}
+#conteiner >div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 5px;
+
+}
+
+  #caja1{background-color: blue;}
+  #caja2{background-color: rgb(207, 19, 59);}
+  #caja3{background-color: rgb(89, 203, 18);}
+  #caja4{background-color: rgba(255, 106, 0, 0.925);}
+div #caja1{
+    /*ancho*/
+
+    width: 50%;
+
+      /*alto*/
+
+     height: 200px;
+     display: flex;
+     background-color: rgb(60, 156, 161);
+     justify-content: center;
+}
+
+
+
+
+</style>
 <body>
+
 
 <div class="contenedor">
 
-
-
-
-
     <h1>  Auto controlado via Wifi </h1>
     <h2><strong>Jeep funcionando</strong></h2>
+   <!--
+    <div id="imagen" >
+    <img src="img/jeep.ico"" alt="No disponible" title="imagen portada">
 
+</div>
+-->
 </div>
 <!-- <h1> De que se trata</h1>
 <video class="video" src="media/h.mp4" controls poster="img/50x10.jpg"></video>
 -->
-
+<!--
 <img class="imagen" src="img/jeep.ico" width=200px alt="">
 <video class="video" src="media/h.mp4" controls poster="img/jeep.ico"  width=200px></video>
-
+-->
 </div>
 <main>
 
+
+    <div id="conteiner">
+        <div id=caja1><img src="img/jeep.ico"" alt="No disponible" title="imagen portada"></div>
+        <div id=caja2></div>
+        <div id=caja3><video class="video" src="media/h.mp4" controls poster="img/jeep.ico"  width=200px></video></div>
+        <div id=caja4></div>
+
+    </div>
 
     <p><a href="index.html" class="irahome"><strong>HOME</a></strong></p>
     </p> <a href="autorf.html" class="activo"><strong> Auto a RF</a></strong></p>
@@ -46,7 +96,7 @@
 <h2><a  href="https://m.youtube.com/watch?v=D76_MFuKHXw">Jeep Control por Wifi</a></h2>
 
      -->
-
+<h2>Materiales Utilizados en el Prototipo</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit aperiam expedita iste nam sapiente hic nihil, animi optio quae cum ducimus unde, voluptate pariatur exercitationem temporibus quibusdam asperiores </p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus officia, obcaecati facilis doloremque, consequatur tempora ullam quisquam numquam eaque perferendis. Numquam ullam quidem illo perferendis voluptas similiq</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt placeat quidem quo similique sint odit dolore ea doloremque. Perferendis vitae velit maxime nulla sapiente quidem distinctio fugiat provident expedita obcaecati eaque ducimus, repudiandae aut molestias qui dolorem quis quia fugit ea itaque eum non. Reiciendis necessitatibus similique velit modi culpa. Deserunt maiores sit, architecto voluptate voluptates voluptatum quas rem asperiores nisi delectus repellendus consequuntur, sapiente accusamus eos facere temporibus excepturi provident saepe dolorum impedit in. Doloremque deserunt perferendis sit nobis vero tempore. Cupiditate vero quas esse quibusdam, laboriosam cumque quae, nemo sapiente praesentium incidunt fuga, voluptatum facere saepe molestiae!</p>
