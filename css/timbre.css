@@ -1,0 +1,10 @@
+body{
+font-family: Verdana, Geneva, sans-serif,monospace;
+ font-size: 1.2rem;
+line-height: 1.6em;
+color:#171817;
+margin: 0 ;
+}
+.redessociales{
+display:flex;
+}
