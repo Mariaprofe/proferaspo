@@ -12,6 +12,8 @@ if(resp!=1){
     } else{
         presultado.innerHTML = '<strong class="error"><i class="fa-solid fa-triangle-exclamation"></i> Incorrecto  vuelve a leer</strong>'
     }
+}
+function validar1(){
 var resp1 = document.getElementById("resp1").value;
 if(resp1==1){
          presultado2.innerHTML = '<strong class="exito1"><i class="fa-solid fa-circle-check"></i>  Es Correcta su respesta eso indica entendimiento del tema.</strong>';

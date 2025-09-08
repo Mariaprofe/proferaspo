@@ -8,27 +8,24 @@
       Incorporamos FontAwesome al proyecto
    -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+  <link rel="stylesheet" href="formulario5.css">
   <style>
 
   body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-color: black;
-background-color:blue;
-}
-p{
 
-
+background-color:write;
 }
 
-h1{
+h1,h2{
  background-color:blue;
     padding: 5px 10px;
     text-align: center;
+
 }
-form,label {
+form,label{
     padding: 10px 10px;
    text-align: center;
 }
@@ -37,38 +34,36 @@ padding: 10px 10px;
 }
 form ,input ,label{
 padding:5px 10px;
+color:red;
 }
 .resultado{
 
 top:0;
 }
 .resultado2{
-
+top:0;
 
 }
-h2{
- background-color:#a8a8c3;
-    padding: 10px 10px;
-    text-align: center;
-}
+
         .exito{
 
             color: green;
         }
         .error{
-            color: red;
+            color:red;
         }
          .exito1{
 
-            color: black;
+            color: green;
         }
         .error1{
-            color: write;
+            color:  red;
         }
-        .value{
-        display:flex;
-        padding: 20px 10px;
-        }
+
+input{
+width:60px;
+padding:3px 8px;
+}
     </style>
 </head>
 <body>
@@ -78,23 +73,40 @@ h2{
   <h2> La automatización se centra en la sustitución o complemento de la labor humana.</h2>
 
 
-
+  <div class="check">
 
 <form>
-  <label>Indicar con un <strong>" 1 "</strong> si opina que es correcto</label>
+  <label for="resp"><strong>Indicar con un  "1 " si opina que es correcto </strong></label>
+  <br>
   <input type="number" id="resp">
-  <input type="button" value="Validar" onclick="validar()">
+  <br>
+  <input type="button" value="Evaluar" onclick="validar()">
+
+
+  <span class="fa-solid fa-check"></span>
+
 </form>
+  </div>
   <p id="resultado" ></p>
+  <br>
+
+  <br>
   <h2> La robotización va un paso más allá de la automatización , pueden sustituir o augmentar la labor humana, especialmente en entornos peligrosos, monótonos o que requieren alta precisión.</h2>
   <form>
-    <label>Indicar con un <strong>" 1 "</strong> si opina que es correcto</label>
+    <label for="resp1"><strong>Indicar con un " 1 "si opina que es correcto</strong> </label>
+    <br>
     <input type="number" id="resp1">
-    <input type="button" value="Validar" onclick="validar()">
-  </form>
+    <br>
 
+    <input type="button" value="Evaluar" onclick="validar1()">
+    <i class="fa-solid fa-check"></i>
+  </form>
+  <br>
+
+  <p><strong><a href="index.html" class="irahome"><strong>VOLVER</a></strong></p>
 
   <p id="resultado2" ></p>
+  <br>
 <script src="formulario5.js"></script>
 </body>
 </html>
