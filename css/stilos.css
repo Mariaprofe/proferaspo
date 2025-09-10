@@ -5,6 +5,7 @@ line-height: 1.6em;
 color:#171817;
 margin: 0 ;
 }
+
 h1{
     
     font-size: 2rem;
@@ -353,6 +354,11 @@ top :50%;
 }
 .irabajo{
 top :10%;
+}
+
+html{
+scroll-behavior:scroll;
+
 }
 .irarriba{
     top:150px;

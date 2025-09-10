@@ -1,11 +1,13 @@
+
+
  body{
     margin: 0;
 
 }
 /*=============================================================
+*/
 
-
-.conteiner{
+#conteiner{
      /*de esta manera se ubica las cajas al lado de otra con el flex*/
        display: flex;
       /*justify-content: center;*/
@@ -13,9 +15,9 @@
        justify-content: space-evenly ;
 
 }
-/*
 
-.conteiner >div{
+
+#conteiner >div{
     width: 100px;
     height: 100px;
     background-color: brown;
@@ -30,7 +32,15 @@
 */
 /*---------------------------------------------------------------*/
 
-.contenedor{
+
+
+#caja1{
+display:none;
+}
+
+
+/*-------------------------------------------------*/
+#contenedor{
 display:flex;
   width: 85%;
     max-width:850px;
@@ -42,12 +52,12 @@ align-top:10px;
 width:350px;
 height:250px;
  align-margin:right;
-;
+padding:0 130px;
 }
 .video{
-width:350px;
-height:250px;
-
+width:200px;
+height:200px;
+padding:0 180px;
 }
 
 
@@ -79,11 +89,12 @@ display: flex;
         left:60%;
         justify-content:right;
         align-items: right;
+        padding:0 40px;
 }
  h2{
   text-align:right;
     width:50%;
-
+   padding:50px 0px;
      right:0;
             align-items: right;
 }
@@ -109,7 +120,9 @@ margin-left: 35%;
    text-decoration: none;
    margin-top:13%;
   margin-right: 20%;
-   margin-left:45%;
+   margin-left:5%;
+
+         margin:0 auto;
  }
 .activo{
 display: flex;
@@ -117,7 +130,9 @@ display: flex;
    text-decoration: none;
    margin-top:13%;
   margin-right: 20%;
-   margin-left:45%;
+   margin-left:7%;
+
+         margin:-10px 0px;
 }
 /* Header y logo */
 
@@ -133,6 +148,18 @@ aside {
     z-index: 1;
 }
 */
+#caja2 {
+display:none;
+}
+#caja3{
+width:200px;
+height:200px;
+
+}
+#caja4 {
+display:none;
+}
+
  footer{
    background-color: navy;
    width: 100%;
