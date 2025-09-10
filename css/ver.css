@@ -11,8 +11,10 @@
      /*de esta manera se ubica las cajas al lado de otra con el flex*/
        display: flex;
       /*justify-content: center;*/
-       /* como se distribuye las cajas internas*/
+       /* como se distribuye las cajas interna
+        * */
        justify-content: space-evenly ;
+    width: 100%;
 
 }
 
@@ -63,14 +65,47 @@ padding:0 180px;
 
 main{
 
-   width: 85%;
+   width: 100%;
        max-width:850px;
       margin:0 auto;
     padding: 20px 80px;
-    box-sizing: border-box;
+  
+
 }
-
-
+.contener{
+  width: 100%;
+   max-width:350px;
+  box-sizing: border-box;
+     margin: auto;
+   margin-top: 100px;
+ background:#00deff;
+ padding:15px;
+ height: 400px;
+ overflow: auto;
+ border-radius:5px;
+ box-shadow: 0px 1px 10px rgba(0,0,0,0.45);
+}
+.contener h1{
+ color:blue;
+ 
+}
+.contener p{ 
+ font-size: 14px;
+ line-height: 1.5;
+ margin-bottom:15px ;
+ 
+text-align: justify;
+ 
+}
+.contener::-webkit-scrollbar{
+ 
+ width: 12px;
+ background: black;
+}
+.contener::-webkit-scrollbar-thumb{
+ background: red;
+  border-radius:5px;
+}
 h1 {
    font-size: 2rem;
 display: flex;
