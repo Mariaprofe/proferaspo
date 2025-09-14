@@ -100,23 +100,34 @@ ul li{
     list-style: none;
 }
  nav ul{
+
     display: flex;
     justify-content: space-evenly;
     padding:0;
     margin: 0;
 }
+nav{
+ 
+flex-wrap: wrap;
+}
+a{
+  font-weight: bold;
+font-size: large;
+ }
 
  nav ul li{
     width: 20%;    
 }
+
 nav ul li a{
     background-color: navy;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    display: block;
+       display:inline-block;
+  
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10;
     transition:1s;
 }
 nav ul li a:hover{
@@ -124,6 +135,7 @@ nav ul li a:hover{
 }
 
 iframe{
+   
  background-color: write;
  width: 100%;
  height: 850px;
@@ -131,6 +143,7 @@ iframe{
  }
 /*----------------------------------------------*/
 .contener1{
+  position: fixed;
   width:100%;
    max-width:350px;
   box-sizing: border-box;
@@ -304,15 +317,65 @@ display:none;
 }
 
  footer{
-   background-color: navy;
-   width: 100%;
-   margin-top: 100%;
-   text-align: center;
-   padding: 13px  120px;
-}
+      background-color: navy;
+      width: 100%;
+      text-align: center;
+      top:290px;
+      padding: 13px  0px;
+  }
 
 footer small{
-   color: white;
-   box-shadow: 2px 2px 10px rgb(109, 57, 57);
+      color: white;
+      box-shadow: 2px 2px 10px rgb(109, 57, 57);
+  
+ @media only screen and (max-width:767px){
+  
+  .contener{
+  display:block;
+  cursor:pointer;
+  padding:0rem 0rem
+
+  }
+
+
+.navigation ul{
+        width:100%;
+        margin-top: 1rem;
+}
+
+.navigation ul{
+      display:none;
+      }
+
+
+
+.navigation ul li a{
+            display :block;
+         padding:0.5rem 0;
+         transition: all 0.4s linear;
+        border-radius: 5px;  
+}
+.navigation ul li a:hover{
+   background:    #ffd700;
 
 }
+h1{
+
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+p{
+
+    margin-bottom: 1.3em;
+    font-size:1rem;
+}
+h2{
+
+    font-size:1.3rem;
+    line-height: 1.6em;
+}
+  }
+
+  
+  
+ }
