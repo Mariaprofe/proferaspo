@@ -215,7 +215,7 @@ text-align: justify;
  overflow: auto;
  border-radius:5px;
  box-shadow: 0px 1px 10px rgba(0,0,0,0.45);
-  /*flex-wrap: wap;*/
+  flex-wrap: wap;
   justify-content:space-between;
 }
 .contener h1{
@@ -231,13 +231,13 @@ color:blue;
 text-align: justify;
  
 }
-
+/*
 .contener::-webkit-scrollbar{
  
  width: 12px;
  background: black;
 }
-/*
+
 .contener::-webkit-scrollbar-thumb{
  background: red;
   border-radius:5px;
