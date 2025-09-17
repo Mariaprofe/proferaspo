@@ -3,7 +3,7 @@
  body{
    font-family: Verdana, Geneva, sans-serif,monospace;
     font-size: 1.2rem;
-   line-height: 1.6em;
+   line-height: 1.7em;
    color:#171817;
    margin: 0 ;
 
@@ -67,7 +67,7 @@ padding:0 180px;
 
 
 main{
-
+  padding-top:15rem;
    width: 100%;
        max-width:850px;
       margin:0 auto;
