@@ -231,15 +231,18 @@ color:blue;
 text-align: justify;
  
 }
+
 .contener::-webkit-scrollbar{
  
  width: 12px;
  background: black;
 }
+/*
 .contener::-webkit-scrollbar-thumb{
  background: red;
   border-radius:5px;
 }
+*/
 h1 {
    font-size: 2rem;
 display: flex;
