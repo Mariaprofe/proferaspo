@@ -2,12 +2,14 @@
 
 body{
 margin:0;
+padding:0;
 }
 
 main {
 
-    padding: 20px;
+    padding: 20px 150px;
     box-sizing: border-box;
+    position:left;
 }
 
 /* Estilos de los productos */
@@ -16,15 +18,18 @@ main {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.4px 0x rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     text-align: center;
 }
 
 .producto img {
-    max-width: 100%;
+    max-width: 50%;
 }
-
+img{
+width:400px;
+heigth:auto;
+}
 
 .producto .descripcion{
     text-align: left;
@@ -32,6 +37,30 @@ main {
 .producto h2 a{
     color: black;
 }
+
+/*----------------------------------------------*/
+.pdfview{
+margin:auto;
+display:block;
+width:850px
+height:1000vh;
+padding:0;
+border-radium:20px;
+    box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
+}
+
+footer{
+    background-color: navy;
+    width: 100%;
+    text-align: center;
+    top:290px;
+    padding: 13px  0px;
+
+}
+
+footer small{
+    color: white;
+    box-shadow: 2px 2px 10px rgb(109, 57, 57);
 
 @media (max-width:1020px){
     .producto{
