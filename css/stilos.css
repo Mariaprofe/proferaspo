@@ -396,18 +396,13 @@ scroll-behavior:scroll;
 
  @media only screen and (max-width:767px){
 .menu-icon{
-  display:block;
+
   cursor:pointer;
   padding:0rem 0rem
 
   }
 
-.menu{
-    width: 45%;
-    max-width:450px;
-   margin:0 auto;
 
-}
 .navigation ul{
         width:100%;
         margin-top: 1rem;
@@ -447,5 +442,11 @@ h2{
     font-size:1.3rem;
     line-height: 1.6em;
 }
-
+.conteiner{
+     width: 150%;
+        margin:1% 3%;
+        display:block;
+        align:center;
+        margin:0;
+  padding-top:1rem;
   }
