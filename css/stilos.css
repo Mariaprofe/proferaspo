@@ -402,7 +402,12 @@ scroll-behavior:scroll;
 
   }
 
+.menu{
+    width: 45%;
+    max-width:450px;
+   margin:0 auto;
 
+}
 .navigation ul{
         width:100%;
         margin-top: 1rem;
@@ -442,4 +447,5 @@ h2{
     font-size:1.3rem;
     line-height: 1.6em;
 }
+
   }
