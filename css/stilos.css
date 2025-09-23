@@ -7,7 +7,7 @@ margin: 0 ;
 }
 
 h1{
-    
+
     font-size: 2rem;
     line-height: 1.3em;
 }
@@ -45,7 +45,7 @@ h3,h4{
 
 }
 
-.header{
+.header {
 
     background: #3786cc;
     color:white
@@ -57,7 +57,8 @@ h3,h4{
             right:0;
 }
 .header a{
-   
+
+
     color:white;
     text-decoration: none;
   
@@ -396,7 +397,7 @@ scroll-behavior:scroll;
   */
 
 
-   @media only screen and (max-width:649px) {
+   @media only screen and (max-width:767px) {
 
 
 .menu-icon{
@@ -406,14 +407,14 @@ scroll-behavior:scroll;
 
   }
 .main{
- display: block;
+
  width:100%;
-  padding:15rem 0;
+  padding:20rem 0;
 }
 
 .navigation ul{
         width:100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
 }
 
 .navigation ul{
