@@ -30,7 +30,27 @@ main {
     box-sizing: border-box;
     text-align: center;
 }
+#articulos ing{
+padding: 0px  10px;
 
+}
+}
+#articulos{
+    display: flex;
+    width:20%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin: 0 auto;
+        padding: 10px;
+}
+
+#articulos article{
+    transition: 1s;
+}
+
+#articulos article:hover{
+    transform: scale(1.2);
+}
 .producto img {
     max-width: 50%;
 }
