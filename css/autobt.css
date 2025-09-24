@@ -1,9 +1,17 @@
 /* Contenedor principal */
 
 body{
-margin:0;
-padding:0;
+font-family: Verdana, Geneva, sans-serif,monospace;
+ font-size: 1.2rem;
+line-height: 1.6em;
+color:#171817;
+margin: 0 ;
 }
+
+
+main{
+    padding-top:15rem;
+ }
 
 main {
 
@@ -16,9 +24,9 @@ main {
 .producto {
     width: 50%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
-    box-shadow: 0.4px 0x rgba(0, 0, 0, 0.1);
+    box-shadow: 0.4px -5x rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     text-align: center;
 }
@@ -42,11 +50,14 @@ heigth:auto;
 .pdfview{
 margin:auto;
 display:block;
-width:850px
-height:1000vh;
+width:850px;
+height:100vh;
 padding:0;
-border-radium:20px;
-    box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
+border-radium:10px;
+box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
+}
+h1,h2{
+   font-size: 1.2rem;  
 }
 
 footer{
@@ -70,8 +81,14 @@ footer small{
 }
 
 
-@media (max-width:420px){
+@media (max-width:767px){
     .producto{
         width: 99%;
     }
+   main ,h2{
+ font-size: 1.2rem;
+ width:100%;
+  padding:20rem 0;
+         margin: 20px auto;
+} 
 }
