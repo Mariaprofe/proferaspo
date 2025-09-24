@@ -55,6 +55,22 @@ height:100vh;
 padding:0;
 border-radium:10px;
 box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
+    #conteiner{
+        
+        display: flex;
+        
+    }
+#caja1{
+    max-width: 50%;
+    width:40px;
+heigth:a40%;
+
+padding:10px 5px;
+}
+#caja3{
+
+max-width: 50%;
+    width:40px;
 }
 h1,h2{
    font-size: 1.2rem;  
