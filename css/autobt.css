@@ -56,11 +56,13 @@ padding: 0px  10px;
     transform: scale(1.2);
 }
 .producto img {
-    max-width: 30%;
+    max-width:40%;
+    padding:10px 10px;
 }
 img{
-width:200px;
+width:400px;
 heigth:auto;
+   padding:10px 10px;
 }
 
 .video{
@@ -79,22 +81,25 @@ padding:0 180px;
 .pdfview{
 margin:auto;
 display:block;
-width:550px;
+width:850px;
 height:100vh;
 padding:0;
 border-radium:10px;
 box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
-    #conteiner{
-        flex-wrap: wrap;
-        display: flex;
-        position:center;
+
     }
+     #conteiner{
+            flex-wrap: wrap;
+            display: flex;
+            position:center;
+            margin-top:0px;
+            }
 #caja1{
     max-width: 50%;
     width:40px;
-heigth:a40%;
+heigth:40%;
  flex-wrap: wrap;
-padding:10px 5px;
+padding:5px 5px;
 }
 #caja3{
 flex-wrap: wrap;
@@ -127,29 +132,30 @@ footer{
 }
 
 
-@media (max-width:767px){
+@media (max-width:768px){
     .producto{
-        width: 99%;
+        width: 100%;
     }
-    .pdfview{
+.pdfview{
 margin:auto;
 display:block;
-width:850px;
+width:800px;
 height:100vh;
 padding:0;
 border-radium:10px;
 box-shadow:0.4px 0px  0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.10);
 }
-   main ,h2{
- font-size: 1.2rem;
- width:100%;
-  padding:20rem 0;
-         margin: 20px auto;
-}
+   main {
+
+   width:70%;
+    padding:0rem 10rem;
+           margin: 20px auto;
+  }
   #articulos{
         flex-wrap: wrap;
     }
-    #conteiner img{
-            width: 20%;
+    #conteiner {
+            width: 800%;
+              padding: 13px  0px;
         }
 }
